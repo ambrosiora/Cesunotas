@@ -1,3 +1,4 @@
+//Model functions
 function updateUserCredentilas(loginInfo){
 	var db = Ti.Database.open( config.db.file );
 	var results = db.execute('REPLACE INTO credentials ( ra, password ) VALUES("'+loginInfo.username+'","'+loginInfo.password+'")');
